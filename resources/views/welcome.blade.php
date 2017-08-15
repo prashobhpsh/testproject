@@ -57,7 +57,7 @@
             <div class="cls-list" data-ng-show="listData.length">
                 <p data-ng-repeat="data in listData"><a href="@{{data.shorten_url}}" target="_blank">{{env('DOMAIN').'/'}}@{{data.shorten_url}}</a></p>
             </div>
-            <p data-ng-show="listData.length==0">No Data Found....!</p>
+            <p data-ng-show="!listData.length">No Data Found....!</p>
         </div>
     </div>
 
